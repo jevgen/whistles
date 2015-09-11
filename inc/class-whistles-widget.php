@@ -33,7 +33,7 @@ class Whistles_Widget extends WP_Widget {
 		);
 
 		/* Create the widget. */
-		$this->WP_Widget(
+		parent::__construct(
 			'whistles',                    // $this->id_base
 			__( 'Whistles', 'whistles' ),  // $this->name
 			$widget_options,               // $this->widget_options
